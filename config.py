@@ -57,15 +57,15 @@ class DevelopmentConfig(Config):
     SQLALCHEMY_RECORD_QUERIES = True
     SQLALCHEMY_ECHO = True
 
-    APP_STATIC_FOLDER = '../poitour-frontend/app'
+    APP_STATIC_FOLDER = '../frontend/app'
 
     @classmethod
     def init_app(self, app):
         from flask import Blueprint
 
         logging.getLogger().setLevel(logging.DEBUG)
-        blueprint_bower = Blueprint('bower', __name__, static_url_path='/bower_components', static_folder='../poitour-frontend/bower_components')
-        blueprint_node = Blueprint('node', __name__, static_url_path='/node_modules', static_folder='../poitour-frontend/node_modules')
+        blueprint_bower = Blueprint('bower', __name__, static_url_path='/bower_components', static_folder='../frontend/bower_components')
+        blueprint_node = Blueprint('node', __name__, static_url_path='/node_modules', static_folder='../frontend/node_modules')
         app.register_blueprint(blueprint_bower)
         app.register_blueprint(blueprint_node)
 
@@ -89,7 +89,7 @@ class DevelopmentConfig(Config):
 
 class IntegrationConfig(Config):
     # use "built" JavaScript sources (concatenated & minified)
-    APP_STATIC_FOLDER = '../poitour-frontend/dist'
+    APP_STATIC_FOLDER = '../frontend/dist'
     DEBUG = True
 
     @classmethod
