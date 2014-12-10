@@ -1,0 +1,13 @@
+.DS_Store
+*.db
+*.pyc
+*.swp
+*~
+db_repository
+/.coverage
+/target
+/venv
+/.project
+/.pydevproject
+/.settings
+/config.ini

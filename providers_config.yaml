@@ -1,0 +1,383 @@
+# This file needs to be saved as UTF-8
+
+OsmTagsProvider:
+    - id: restaurant
+      name: Restaurant
+      display_name: Restaurants
+      description: null
+      tags:
+          - amenity: restaurant
+          
+    - id: church
+      name: Kirche
+      display_name: Kirchen
+      description: null
+      tags:
+          - building: church
+          
+    - id: cafe
+      name: Kaffee
+      display_name: Kaffees
+      description: null
+      tags:
+          - amenity: cafe
+        
+    - id: clothes_shop
+      name: Kleiderladen
+      display_name: Kleiderläden
+      description: null
+      tags:
+          - shop: clothes
+          
+    - id: fountain
+      name: Brunnen
+      display_name: Brunnen
+      description: null
+      tags:
+          - amenity: fountain
+          
+    - id: bank
+      name: Bank
+      display_name: Banken
+      description: null
+      tags:
+          - amenity: bank
+         
+    - id: atm
+      name: Bankautomat
+      display_name: Bankautomaten
+      description: null
+      tags:
+          - amenity: atm 
+          
+    - id: pharmacy
+      name: Apothek
+      display_name: Apotheken
+      description: null
+      tags:
+          - amenity: pharmacy
+          
+    - id: fast_food
+      name: Fast Food
+      display_name: Fast Food
+      description: null
+      tags:
+          - amenity: fast_food
+        
+    - id: bar
+      name: Bar
+      display_name: Bars
+      description: null
+      tags:
+          - amenity: bar
+          
+    - id: club
+      name: Club
+      display_name: Nachtclubs
+      description: null
+      tags:
+          - amenity: nightclub  
+          
+    - id: university
+      name: Hochschule
+      display_name: Hochschulen/Universitäten
+      description: null
+      tags:
+          - amenity: university
+          
+    - id: bicycle_rental
+      name: Fahrradverleih
+      display_name: Fahrradverleihe
+      description: null
+      tags:
+          - amenity: bicycle_rental
+          
+    - id: bench
+      name: Sitzbank
+      display_name: Sitzbänke
+      description: null
+      tags:
+          - amenity: bench
+
+    - id: shoe_shop
+      name: Schuhladen
+      display_name: Schuhläden
+      description: null
+      tags:
+          - shop: shoes
+          
+    - id: shopping
+      name: Shopping
+      display_name: Shopping
+      description: null
+      includes:
+          - shoe_shop
+          - clothes_shop
+      tags:
+          - shop: department_store
+              
+    - id: book_shop
+      name: Buchladen
+      display_name: Buchläden
+      description: null
+      tags:
+          - shop: books 
+             
+    - id: hairdresser
+      name: Friseur
+      display_name: Friseure
+      description: null
+      tags:
+          - shop: hairdresser
+          
+    - id: toilet
+      name: Öffentliche Toilette
+      display_name: Öffentliche Toiletten
+      description: null
+      tags:
+          - amenity: toilet     
+          
+    - id: jewelry_shop
+      name: Schmuckgeschäft
+      display_name: Schmuckgeschäfte
+      description: null
+      tags:
+          - shop: jewelry 
+              
+    - id: shoe_shop
+      name: Schuhladen
+      display_name: Schuhläden
+      description: null
+      tags:
+          - shop: shoes
+          
+    - id: park
+      name: Park
+      display_name: Parks
+      description: null
+      tags:
+          - leisure: park   
+          
+    - id: playground
+      name: Spielplatz
+      display_name: Spielplätze
+      description: null
+      tags:
+          - leisure: playground
+          
+    - id: sports
+      name: Sport & Fitness
+      display_name: Sport & Fitness 
+      description: null
+      tags:
+          - leisure: sports_centre
+          - leisure: fitness_station
+          - amentiy: gym
+          
+    - id: minigolf
+      name: Minigolf
+      display_name: Minigolf
+      description: null
+      tags:
+          - leisure: miniature_golf  
+        
+    - id: run_track
+      name: Jogging-Bahn
+      display_name: Jogging-Bahnen
+      description: null
+      tags:
+          - leisure: track  
+            
+    - id: pitch
+      name: Sportplatz
+      display_name: Sportplätze
+      description: null
+      tags:
+          - leisure: pitch
+
+    - id: museum
+      name: Museum
+      display_name: Museen
+      description: null
+      tags:
+          - tourism: museum     
+          
+    - id: picnic
+      name: Piknik
+      display_name: Piknik Plätze & Tische
+      description: null
+      tags:
+          - tourism: picnic_site
+          - leisure: picnic_table
+
+    - id: attraction
+      name: Sehenswürdigkeit
+      display_name: Sehenswürdigkeiten
+      description: null
+      tags:
+          - tourism: attraction
+            attraction: ~animal
+          - tourism: 'yes'
+          
+    - id: alpine_hut
+      name: Berghütte
+      display_name: Berghütten
+      description: null
+      tags:
+          - tourism: alpine_hut  
+          
+    - id: camp_size
+      name: Campingplatz
+      display_name: Campingplätze 
+      description: null
+      tags:
+          - tourism: camp_site
+          
+    - id: artwork
+      name: Öffentliches Kunstwerk
+      display_name: Öffentliche Kunstwerke 
+      description: null
+      tags:
+          - tourism: artwork
+          
+    - id: hotel
+      name: Hotel
+      display_name: Hotels
+      description: null
+      tags:
+          - tourism: hotel      
+            
+    - id: hostel
+      name: Hostel
+      display_name: Hostels
+      description: null
+      tags:
+          - tourism: hostel         
+    
+    - id: sleep_place # TODO rename
+      name: Unterkunft
+      display_name: Unterkünfte
+      description: null
+      tags:
+          - tourism: hotel  
+          - tourism: hostel
+          - tourism: guest_house
+          - tourism: chalet
+          - tourism: motel
+            
+    - id: viewpoint
+      name: Aussichtspunkt
+      display_name: Aussichtspunkte
+      description: null
+      tags:
+          - tourism: viewpoint          
+            
+    - id: zoo
+      name: Zoo
+      display_name: Zoos
+      description: null
+      tags:
+          - tourism: zoo   
+          
+    - id: tourism_info
+      name: Touristen-Infopunkt
+      display_name: Touristen-Infopunkte
+      description: null
+      tags:
+          - tourism: information
+          
+    - id: tourism
+      name: Tourismus
+      display_name: Tourismus
+      description: null
+      includes:
+          - viewpoint
+          - artwork
+          - attraction
+          
+    - id: castle
+      name: Schloss
+      display_name: Schlösser
+      description: null
+      tags:
+          - historic: castle
+
+    - id: stream
+      name: Bach
+      display_name: Bäche
+      description: null
+      tags:
+          - waterway: stream
+
+    - id: river
+      name: Fluss
+      display_name: Flüsse
+      description: null
+      tags:
+          - waterway: river
+          
+    - id: lake
+      name: See
+      description: null
+      tags:
+          - water: lake
+
+
+    - id: water
+      name: Gewässer
+      display_name: Gewässer
+      description: null
+      includes:
+          - river
+          - stream
+          - lake
+
+    - id: forest
+      name: Wald
+      display_name: Wälder
+      description: null
+      tags:
+          - landuse: forest
+          
+    - id: cemetery
+      name: Friedhof
+      display_name: Friedhöfe
+      description: null
+      tags:
+          - landuse: cemetery
+
+    - id: meadow_grass
+      name: Wiesen
+      display_name: Wiesen
+      description: null
+      tags:
+          - landuse: meadow
+          - landuse: grass
+          
+    - id: farms
+      name: Bauernhof
+      display_name: Bauernhöfe
+      description: null
+      tags:
+          - landuse: farm
+          - landuse: farmland
+          
+    - id: xmas_tree
+      name: Weihnachtsbaum
+      description: null
+      tags:
+          - 'xmas:feature': tree
+          
+    - id: xmas_market
+      name: Weihnachtsmarkt
+      description: null
+      tags:
+          - 'xmas:feature': market
+            
+    - id: xmas
+      name: Weihnachts-POI
+      display_name: Weihnachten
+      description: null
+      includes:
+          - xmas_market
+          - xmas_tree

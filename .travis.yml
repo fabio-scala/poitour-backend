@@ -1,0 +1,26 @@
+language: python
+
+python:
+  - 2.7
+  
+env:
+  - IS_TRAVIS=True
+
+before_install:
+  - sudo apt-get install -qq python-numpy python-scipy
+  
+virtualenv:
+  system_site_packages: true
+  
+install:
+  - pip install pybuilder
+  - cp sample_config.ini config.ini
+
+script: pyb -v
+
+notifications:
+  email:
+    recipients:
+      - fabio.scala@gmail.com
+    on_success: change
+    on_failure: always  

@@ -1,0 +1,11 @@
+# This file needs to be saved as UTF-8
+
+MockProvider:
+    - id: foobar
+      points:
+          - [1, 2]
+          - [3, 4]
+          - [5, 6]
+      some_dict:
+          foo: bar
+          bar: baz
