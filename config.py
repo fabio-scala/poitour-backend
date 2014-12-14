@@ -57,7 +57,7 @@ class DevelopmentConfig(Config):
     SQLALCHEMY_RECORD_QUERIES = True
     SQLALCHEMY_ECHO = True
 
-    APP_STATIC_FOLDER = '../frontend/app'
+    APP_STATIC_FOLDER = '../../frontend/app'
 
     @classmethod
     def init_app(self, app):
@@ -77,7 +77,7 @@ class DevelopmentConfig(Config):
                                    (query.statement, query.parameters, query.duration, query.context))
 
             return response
-
+        return
         @app.before_request
         def enable_pydev():
             # remove this if you used pydev and adjust the bath below
@@ -89,7 +89,7 @@ class DevelopmentConfig(Config):
 
 class IntegrationConfig(Config):
     # use "built" JavaScript sources (concatenated & minified)
-    APP_STATIC_FOLDER = '../frontend/dist'
+    APP_STATIC_FOLDER = '../../frontend/dist'
     DEBUG = True
 
     @classmethod

@@ -203,8 +203,8 @@ OsmTagsProvider:
           - tourism: museum     
           
     - id: picnic
-      name: Piknik
-      display_name: Piknik Plätze & Tische
+      name: Picknick
+      display_name: Picknick Plätze & Tische
       description: null
       tags:
           - tourism: picnic_site
