@@ -30,6 +30,11 @@ def dev():
     app.run(host='127.0.0.1', port=5000, threaded=True, use_debugger=True, use_reloader=True)
 
 
+@manager.command
+def dev_listenall():
+    app.run(host='0.0.0.0', port=5000, threaded=True, use_debugger=True, use_reloader=True)
+
+
 def make_shell_context():
     return dict(app=app, db=db)
 
