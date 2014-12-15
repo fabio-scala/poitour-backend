@@ -14,7 +14,7 @@ import numpy
 
 class GaSolver(object):
 
-    """ Genetic algorithm based on `A. Piwonska and J. Koszelew selective travelling salesman algorithm <http://dl.acm.org/citation.cfm?id=2029846>`_
+    """ Genetic algorithm based on `A. Piwonska selective travelling salesman algorithm <http://yadda.icm.edu.pl/baztech/element/bwmeta1.element.baztech-article-BPB1-0051-0005>`_
     :param start: The index of the tour starting point in distances.
     :type start: int
 
